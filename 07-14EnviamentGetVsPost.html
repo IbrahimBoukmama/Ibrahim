@@ -1,0 +1,44 @@
+<p><a href="index.html">INDEX</a></p>
+<!DOCTYPE html>
+<html lang="es">
+    <p><a href="index.html">INDEX</a></p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enviament Get vs Post</title>
+</head>
+<body>
+   <H1>Enviament Get vs Post</H1>
+    <h2>METODE GET</h2>
+    <p>És el mètode d'entrada a pàgines web quan nosaltres hi entrem a través de la url. Poseu l'atribut action amb valor "enviar html" i l'atribut method amb el valor get.</p>
+    <p>Malgrat posem el nom i el cognom als camps, res no s'envia perquè en la url després del ? no hi ha cap informació (http://127.0.0.1:5500/HTML/enviar.html?) </p>
+    <h3>Sense atribut name</h3>
+    <form action="enviar.html" method="get">
+        <div><label for="name">Name</label></div>
+        <div><input type="text" id="name" ></div>
+        <div><label for="surname">Surname</label>
+        <div><input type="text" id="surname"></div>
+        <input type="submit">   
+    </form>
+<h3>Amb atribut name</h3>
+<p>Amb l'atribut name als inputs  podem veure que apareix el nom al url(http://127.0.0.1:5500/HTML/enviar.html?name=Ibrahim&surname=Boukmama)</p>
+<form action="enviar.html" method="get">
+    <div><label for="name" >Name</label></div>
+    <div><input type="text" id="name" name="name"></div>
+    <div><label for="surname">Surname</label>
+    <div><input type="text" id="surname" name="surname"></div>
+    <input type="submit">   
+</form>
+
+<h2>METODE POST</h2>
+<p>És un enviament del formulari per la porta del darrere. L'error 405 que surt significa que s'han intentat enviar les dades però no han arribat al destí.</p>
+<form action="enviar.html" method="post">
+    <div><label for="name" >Name</label></div>
+    <div><input type="text" id="name" name="name"></div>
+    <div><label for="surname">Surname</label>
+    <div><input type="text" id="surname" name="surname"></div>
+    <input type="submit">
+</form>
+<p>Inspecciona->Network->Ctrl+r->enviar.html->Payload</p>
+</body>
+</html>

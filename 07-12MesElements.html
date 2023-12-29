@@ -1,0 +1,66 @@
+<p><a href="index.html">INDEX</a></p>
+<!DOCTYPE html>
+<html lang="es">
+    <p><a href="index.html">INDEX</a></p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>MÉS ELEMENTS DELS FORMULARIS</h1> 
+
+   <H2> Etiqueta Fieldset</H2>
+   <p>Agrupar Elements a dins d'un formulari. Va amb l'etiqueta legend per posar un nom al contingut. </p>
+
+   <form >
+    <Fieldset>
+       <legend>Dades Personals</legend>
+        <div><label for="name">Name</label></div>
+        <div><input type="text" id="name"></div>
+       <div> <label for="surname">Surname</label></div>
+       <div><input type="text" id="surname"></div>
+    </Fieldset>
+   </form>
+
+   <h2>INPUT DE TIPUS FILE</h2>
+   <form >
+    <Fieldset>
+       <legend>Dades Personals</legend>
+        <div><label for="name">Name</label></div>
+        <div><input type="text" id="name"></div>
+       <div> <label for="surname">Surname</label></div>
+       <div><input type="text" id="surname"></div>
+       <div><input type="file" name="photo" id="Picture"></div>
+    </Fieldset>
+   </form>
+
+   <h2>ETIQUETA METER</h2>
+   <p>Atributs: min, max, low, high, optimum</p>
+
+   <form >
+    <label for="fuel">Combustible</label>
+    <meter id="fuel" min="0" max="100" value="45" low="25" high="75" optimum="100"> 
+
+    </meter>
+   </form>
+
+   <h2>Etiqueta PROGRESS</h2>
+   <p>Crea una barra de progress en funcio dels atributs Value i Max</p>
+   <form >
+<label for="task">Task 1</label>
+  <progress id="task" max="100" value="33"></progress> </form>
+  <form >
+   <label for="task">Task 2</label>
+     <progress id="task" max="100" value="67"></progress> </form>
+   
+  <h2>Etiqueta TEXTAREA</h2>
+  <p>Porta els atributs cols i rows amb valors numèrics</p>
+
+  <form >
+   <label for="message">Task 3</label>
+   <textarea name="Task 3" id="message" cols="80" rows="20"></textarea>
+
+  </form>
+</body>
+</html>

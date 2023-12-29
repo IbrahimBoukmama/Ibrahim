@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+    <p><a href="index.html">INDEX</a></p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulari de Jugador</title>
+</head>
+<body>
+
+<h2>Formulari de Jugador</h2>
+
+<form action="/enviar_dades" method="post">
+
+    <fieldset>
+        <div>
+        <legend> Informació Personal </legend>
+        <label for="nom">Nom:</label>
+        <input type="text" id="nom" name="nom" placeholder="Nom" required>
+        </div>        
+        <div>
+        <label for="cognom">Cognom:</label>
+        <input type="text" id="cognom" name="cognom" placeholder="Cognom" required>
+        </div>
+        <div>
+        <label for="adreca">Adreça:</label>
+        <input type="text" id="adreca" name="adreca" placeholder="Adreça" required>
+        </div>
+    </fieldset>
+
+    <div><label for="genere"> Gènere:</label>
+    <select id="genere" name="genere">
+        <option value="home">Home</option>
+        <option value="dona">Dona</option>
+        <option value="trans" disabled>Trans</option>
+    </select>
+    </div>
+    <div>
+    <label for="estat_civil"> Estat Civil: 
+    </label>
+    <input type="text" id="estat_civil" name="estat_civil" value="Solter/a" required>
+    </div>
+
+    <label for="data_naixement"> Data de Naixement: </label>
+    <input type="date" id="data_naixement" name="data_naixement" required>
+    <br>
+
+    <label for="email"> Correu Electrònic: 
+    </label>
+    <input type="email" id="email" name="email" placeholder="qwerty@gmail.com" required>
+    <br>
+
+    <label for="mobil"> Número de Mòbil: </label>
+    <input type="tel" id="mobil" name="mobil" pattern="[0-9]{9}" placeholder="123456789" required>
+    <br>
+
+    <label for="instagram"> Compte d'Instagram (amb @): </label>
+    <input type="text" id="instagram" name="instagram" pattern="@[a-zA-Z0-9_]+" placeholder="@qwerty_123" required>
+    <br>
+    <label for="twitter"> Compte de Twitter (amb @): </label>
+    <input type="text" id="twitter" name="twitter" pattern="@[a-zA-Z0-9_]+" placeholder="@qwerty_123" required>
+    <br>
+
+    <label for="posicio"> Preferències de Posició: </label>
+    <select id="posicio" name="posicio" multiple>
+        <option value="defensa_central">Defensa Central</option>
+        <option value="lateral">Lateral</option>
+        <option value="migcampista">Migcampista</option>
+        <option value="davanter_centre">Davanter Centre</option>
+        <option value="extrem">Extrem</option>
+    </select>
+    <br>
+
+    <label for="foto"> Adjuntar Foto de Carnet: </label>
+    <input type="file" id="foto" name="foto" accept="image/*">
+    <br>
+
+    <label for="color_armariet"> Color per a l'Armariet: </label>
+    <input type="color" id="color_armariet" name="color_armariet">
+    <br>
+
+    <label for="setmana_viatge"> Setmana de l'Any per al Viatge Final: </label>
+    <input type="week" id="setmana_viatge" name="setmana_viatge">
+    <br>
+
+    <input type="submit" value="Enviar Dades">
+
+</form>
+
+</body>
+</html>
